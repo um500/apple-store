@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store Landing Page</title>
+    <style>
+   
+        .exampleone{
+            background-color: aqua;
+        } 
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        section {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .product {
+            display: inline-block;
+            margin: 0 1rem;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .btn-pink {
+         background-color: var(--bgOrange);
+         width: fit-content;
+         color: rgb(9, 7, 7);
+         padding: 0.8rem 2.3rem;
+         box-shadow: 5px 5px 7px 0px #0908083f;
+         font-size: 18px;
+         cursor: pointer;
+         transition: all 0.5s;
+         font-weight: 500;
+         border: solid 3px transparent;
+         position: relative;
+         z-index: 1;
+       }
+      .btn-pink::before {
+       content: "";
+       position: absolute;
+       background-color: #cb0606;
+       top: 0px;
+       left: 0;
+       right: 0;
+       bottom: 0px;
+       z-index: -1;
+       transform: scaleX(0);
+       transform-origin: left;
+       transition: all 0.8s;
+       }
+       .btn-pink:hover::before {
+        transform: scaleX(1);
+       }
+       .btn-pink:hover {
+        border: solid 3px var(--bgOrange);
+        color: black;
+        }
+
+        .product{
+        width: 32%;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        }
+
+        .product img{
+            box-shadow:  0 0 20px #333;
+
+        height: 100%;
+        width: 100%;
+        }
+
+
+        .product:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
+        }
+       .product:hover img {
+       filter: grayscale(0%);
+       }
+
+       .product figcaption{
+       position: absolute;
+       bottom: 0;
+       top: 0;
+       padding: 25px;
+       width: 100%;
+       height: 20%;
+       font-size: 20px;
+       font-weight: 500;
+       color: #fff;
+       opacity: 0;
+       border-radius: 0 0 10px 10px;
+       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(225, 225, 225, 0) 100%);
+       transition: 0.3s;
+      }
+
+      .product:hover  figcaption{
+       opacity: 1;
+       transform: scale(1.03s);
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Apple Store</h1>
+        <p>Explore the latest products.</p>
+    </header>
+    <section class="exampleone">
+        <div class="product">
+            <img src="./image/iphone.png" alt="iPhone">
+            <h2>iPhone</h2>
+
+            <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+            </div>
+
+            <p>Experience the best in mobile technology.</p>
+
+        </div>
+        <div class="product">
+            <img src="./image/a3.png" alt="MacBook">
+            <h2>MacBook</h2>
+            <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+            </div>
+            <p>Powerful performance in a sleek design.</p>
+        </div>
+        <div class="product">
+            <img src="./image/a1.png" alt="AirDrop">
+            <h2>AirDrop</h2>
+            <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+            </div>
+            <p>Seamlessly share files with ease.</p>
+        </div>
+        <div class="product">
+            <img src="./image/a4.png" alt="Apple Watch">
+            <h2>Apple Watch</h2>
+            <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+            </div>
+            <p>Stay connected and monitor your health.</p>
+        </div>
+        <div class="product">
+            <img src="./image/a2.png" alt="iPad">
+            <h2>iPad</h2>
+            <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+            </div>
+            <p>Unleash your creativity and productivity.</p>
+        </div>
+        <div class="product">
+            <img src="./image/a5.png" alt="iPad">
+            <h2>Big Screen</h2>
+            <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+            </div>
+            <p>Unleash your creativity and productivity.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Contact us: apple@store.com</p>
+    </footer>
+</body>
+</html>
